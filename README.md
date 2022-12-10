@@ -1,6 +1,6 @@
-# TeamC3 Cinemas: A Cinema E-Booking App
+# C3 Cinemas: A Cinema E-Booking App
 
-TeamC3 Cinemas is an application that allows users to browse and filter movies, select a showtime, select seats, purchase tickets, apply promos, and recieve order confirmations.
+C3 Cinemas is an application that allows users to browse and filter movies, select a showtime, select seats, purchase tickets, apply promos, and recieve order confirmations.
 
 The system also includes an admin portal for admins to manage movies, showings, ticket prices, promotions, and other users.
 
