@@ -7,6 +7,10 @@ The system also includes an admin portal for admins to manage movies, showings, 
 ## Overview
 
 
+https://user-images.githubusercontent.com/68082493/206835143-07925f39-984e-455b-a575-9e776205635e.mov
+
+
+
 ## Installation
 1. Clone project from git hub
 ```bash
