@@ -1,82 +1,40 @@
-# CSCI4050_GroupC3
+# TeamC3 Cinemas: A Cinema E-Booking App
 
-This repo contains the code for CSCI 4050 course project
+TeamC3 Cinemas is an application that allows users to browse and filter movies, select a showtime, select seats, purchase tickets, apply promos, and recieve order confirmations.
 
-Group Members:
-Bella Humphrey,
-Nathan Jacobi,
-Nicholas Kundin,
-Yalini Nadar
+The system also includes an admin portal for admins to manage movies, showings, ticket prices, promotions, and other users.
 
-## Run Django Project
+## Overview
 
+
+## Installation
+1. Clone project from git hub
+```bash
+git clone https://github.com/YaliniNadar/Cinema-E-Booking.git
+```
+2. Install the required packages
+```bash
+python3 -m pip install -r requirements.txt
+```
+3. Create a .env file to store the following as environment variables:
+```bash
+FIELD_ENCRYPTION_KEY=''
+TMDB_KEY=''
+EMAIL_HOST_USER=''
+EMAIL_HOST_PASSWORD = ''
+```
+
+4. To start the app, run
 ```
 cd project
-py manage.py runserver
+python3 manage.py makemigrations
+python3 manage.py migrate
+python3 load.py
+python3 manage.py runserver
 ```
 
-## Create a .env file to store the following as environment variables
-
-```
-FIELD_ENCRYPTION_KEY=''
-EMAIL_HOST_PASSWORD = ''
-TMDB_KEY=''
-```
-
-## Managing DB
-
-```
-python manage.py makemigrations
-python manage.py migrate
-```
-
-## DB Shell
-
-```
-python manage.py dbshell
-```
-
-1. List the tables in the db
-
-```
-.tables
-```
-
-2. List how the table looks:
-
-```
-.schema <tablenaame>
-```
-
-3. Print entire table
-
-```
-SELECT * FROM <tablename>;
-```
-
-## Loading Data
-
-```
-python3 manage.py loaddata movie_data.json
-```
-
-## Installations
-To download all necessary installations written below, run 
-``
-python -m pip install -r requirements.txt
-``
-
-```
-pip install django-crispy-forms==1.14.0
-pip install django-localflavor
-pip install django-credit-cards
-pip install django-encrypted-model-fields
-pip install django-email-verification
-pip install pillow
-pip install django-filter
-
-```
-
-## Notes and Resources
-
-https://pypi.org/project/django-credit-cards/
+## Contributors
+- [Bella Humphrey](https://github.com/idhumphrey)
+- [Nathan Jacobi](https://github.com/njj67229)
+- [Nicholas Kundin](https://github.com/nickundin)
+- [Yalini Nadar](https://github.com/YaliniNadar)
